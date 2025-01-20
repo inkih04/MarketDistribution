@@ -15,10 +15,10 @@ Programming project, Group 23, subgroup 2 <br>Teacher: Sergio Álvarez Napagao (
 
 | Member                  | Classes Implemented                                                                 |
 |-------------------------|-------------------------------------------------------------------------------------|
-| Max Estrade             | AbstractAlgorithm, BruteForceAlgorithm, BruteForceAlgorithmTest, HillClimbingAlgorithm, HillClimbingAlgorithmTest, Distribution |
+| Max Estrade             | AbstractAlgorithm, BruteForceAlgorithm, HillClimbingAlgorithm, Distribution |
 | Víctor Díez             | InputManager, ControllerDomain, DriverControllerDomain, Shelf                       |
-| Víctor Llorens          | Similarity, SimilarityManager, BruteForceAlgorithmTest, HillClimbingAlgorithmTest, ShelfManager, Shelf, Pair |
-| Sergio Shmyhelskyy      | Product, ProductList, ProductManager, DistributionManager, ProductTest, ProductListTest, DriverProductManager, UserManager, UserSet, User, CurrentUser, AdminUser|
+| Víctor Llorens          | Similarity, SimilarityManager, ShelfManager, Shelf, Pair |
+| Sergio Shmyhelskyy      | Product, ProductList, ProductManager, DistributionManager DriverProductManager, UserManager, UserSet, User, CurrentUser|
 
 ### Persistence Layer
 
