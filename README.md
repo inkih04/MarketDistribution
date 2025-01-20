@@ -38,7 +38,7 @@ Programming project, Group 23, subgroup 2 <br>Teacher: Sergio Álvarez Napagao (
 | Víctor Llorens          |  CreateShelfView, GenerateDistributionView, ManageDistributionsView, ShelfView, ShowDistributionView                                                                                  |
 | Sergio Shmyhelskyy      | BasicView, AddProductView, ProductCatalogView, ProductListMenuView, ProductListView, SimilaritiesDialog, OperationLogView                              |
 
-##APP Menu
+## APP Menu
 
 <div align="center" style="margin-bottom: 40px;">
   <img src="https://github.com/inkih04/SuperMarketDistribution/blob/main/pictures/optionsMenu.png" alt="Options Menu">
