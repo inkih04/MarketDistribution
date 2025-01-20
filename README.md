@@ -39,9 +39,12 @@ Programming project, Group 23, subgroup 2 <br>Teacher: Sergio Álvarez Napagao (
 | Sergio Shmyhelskyy      | BasicView, AddProductView, ProductCatalogView, ProductListMenuView, ProductListView, SimilaritiesDialog, OperationLogView                              |
 
 ##APP Menu
-![App Menu](https://github.com/inkih04/SuperMarketDistribution/blob/main/pictures/optionsMenu.png)
-![App Menu](https://github.com/inkih04/SuperMarketDistribution/blob/main/pictures/distributions.png)
-![App Menu](https://github.com/inkih04/LinguaQuest/blob/main/imagesREADME/fotoMenu.png)
+
+![](https://github.com/inkih04/SuperMarketDistribution/blob/main/pictures/optionsMenu.png)
+
+![](https://github.com/inkih04/SuperMarketDistribution/blob/main/pictures/distributions.png)
+
+![](https://github.com/inkih04/LinguaQuest/blob/main/imagesREADME/fotoMenu.png)
 
 
 ## Directory elements
