@@ -36,7 +36,7 @@ Programming project, Group 23, subgroup 2 <br>Teacher: Sergio Álvarez Napagao (
 | Max Estrade             | -                                                                                   |
 | Víctor Díez             | PresentationController, LoginView, ShelfView, MenuView, ProductCatalogView                                                                                  |
 | Víctor Llorens          |  CreateShelfView, GenerateDistributionView, ManageDistributionsView, ShelfView, ShowDistributionView                                                                                  |
-| Sergio Shmyhelskyy      | PresentationController, BasicView, AddProductView, ProductCatalogView, ProductListMenuView, ProductListView, SimilaritiesDialog, OperationLogView                              |
+| Sergio Shmyhelskyy      | BasicView, AddProductView, ProductCatalogView, ProductListMenuView, ProductListView, SimilaritiesDialog, OperationLogView                              |
 
 
 ## Directory elements
