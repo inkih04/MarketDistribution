@@ -1,0 +1,71 @@
+.
+├── main
+│      ├── java
+│      │     └── org
+│      │         ├── data
+│      │         │     └── index.txt
+│      │         ├── domain
+│      │         │     ├── algorithms
+│      │         │     │     ├── AbstractAlgorithm.java
+│      │         │     │     ├── BruteForceAlgorithm.java
+│      │         │     │     └── SmartAlgorithm.java
+│      │         │     ├── app
+│      │         │     │     └── Application.java
+│      │         │     ├── classes
+│      │         │     │     ├── Distribution.java
+│      │         │     │     ├── Product.java
+│      │         │     │     ├── ProductList.java
+│      │         │     │     ├── Shelf.java
+│      │         │     │     └── Similarity.java
+│      │         │     ├── controllers
+│      │         │     │     ├── ControllerDomain.java
+│      │         │     │     ├── DistributionManager.java
+│      │         │     │     ├── InputManager.java
+│      │         │     │     ├── ProductManager.java
+│      │         │     │     └── SimilarityManager.java
+│      │         │     ├── exceptions
+│      │         │     │     ├── DistributionException.java
+│      │         │     │     ├── InputManagerException.java
+│      │         │     │     ├── ParserException.java
+│      │         │     │     ├── ProductException.java
+│      │         │     │     ├── ProductListException.java
+│      │         │     │     └── ShelfException.java
+│      │         │     ├── index.txt
+│      │         │     └── types
+│      │         │         └── Pair.java
+│      │         ├── drivers
+│      │         │     ├── DriverControllerDomain.java
+│      │         │     ├── DriverProductManager.java
+│      │         │     ├── domain.mf
+│      │         │     └── index.txt
+│      │         └── presentation
+│      │             └── index.txt
+│      └── resources
+└── test
+    ├── java
+    │      └── org
+    │          ├── domain
+    │          │     ├── algorithms
+    │          │     │     └── BruteForceAlgorithmTest.java
+    │          │     └── classes
+    │          │         ├── ProductListTest.java
+    │          │         └── ProductTest.java
+    │          └── index.txt
+    └── resources
+
+This file provides an overview of the directory structure and contents of the project.
+Directory Structure
+
+- **main/java/org/data**: Contains data-related files.
+- **main/java/org/domain/algorithms**: Contains algorithm classes.
+- **main/java/org/domain/app**: Contains the main application class.
+- **main/java/org/domain/classes**: Contains core classes like `Product`, `ProductList`, etc.
+- **main/java/org/domain/controllers**: Contains controller classes for managing different aspects of the domain.
+- **main/java/org/domain/exceptions**: Contains custom exception classes.
+- **main/java/org/domain/types**: Contains utility types like `Pair`.
+- **main/java/org/drivers**: Contains driver classes for testing and running the application.
+- **main/java/org/presentation**: Contains presentation-related files.
+- **main/resources**: Contains resource files.
+- **test/java/org/domain/algorithms**: Contains test classes for algorithms.
+- **test/java/org/domain/classes**: Contains test classes for core classes.
+- **test/resources**: Contains test resource files.

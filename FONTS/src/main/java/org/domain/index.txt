@@ -1,0 +1,65 @@
+.
+├── algorithms
+│   ├── AbstractAlgorithm.java
+│   ├── BruteForceAlgorithm.java
+│   └── SmartAlgorithm.java
+├── app
+│   └── Application.java
+├── classes
+│   ├── Distribution.java
+│   ├── Product.java
+│   ├── ProductList.java
+│   ├── Shelf.java
+│   └── Similarity.java
+├── controllers
+│   ├── ControllerDomain.java
+│   ├── DistributionManager.java
+│   ├── InputManager.java
+│   ├── ProductManager.java
+│   └── SimilarityManager.java
+├── exceptions
+│   ├── DistributionException.java
+│   ├── InputManagerException.java
+│   ├── ParserException.java
+│   ├── ProductException.java
+│   ├── ProductListException.java
+│   └── ShelfException.java
+├── index.txt
+└── types
+    └── Pair.java
+
+algorithms : Contains classes that implement different algorithms for solving the distribution problem.
+    AbstractAlgorithm.java: Abstract base class for different algorithms.
+    BruteForceAlgorithm.java: Implementation of a brute force algorithm.
+    SmartAlgorithm.java: Implementation of a more efficient algorithm.
+
+app : Contains the main application class.
+    Application.java: Main application class that initializes and runs the program.
+
+classes : Contains classes that represent the domain model.
+    Distribution.java: Represents the distribution of products on shelves.
+    Product.java: Represents a product in the catalog.
+    ProductList.java: Represents a list of products.
+    Shelf.java: Represents a shelf that holds products.
+    Similarity.java: Represents the similarity between products.
+
+controllers : Contains classes that manage the domain logic.
+    ControllerDomain.java: Manages the domain logic and coordinates between different managers.
+    DistributionManager.java: Manages the distribution of products on shelves.
+    InputManager.java: Handles input operations.
+    ProductManager.java: Manages products and product lists.
+    SimilarityManager.java: Manages similarities between products.
+
+data
+    // Data classes go here
+
+exceptions : Contains custom exception classes.
+    DistributionException.java: Exception related to distribution operations.
+    InputManagerException.java: Exception related to input operations.
+    ParserException.java: Exception related to parsing operations.
+    ProductException.java: Exception related to product operations.
+    ProductListException.java: Exception related to product list operations.
+    ShelfException.java: Exception related to shelf operations.
+
+types : Contains generic types used in the program.
+    Pair.java: Represents a generic pair of objects.

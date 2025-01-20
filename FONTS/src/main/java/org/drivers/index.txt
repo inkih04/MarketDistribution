@@ -1,0 +1,166 @@
+.
+├── DriverControllerDomain.java
+├── DriverProductManager.java
+├── domain.mf
+└── index.txt
+
+DriverControllerDomain.java:
+    Contains the driver code of the ControllerDomain class. This class is responsible for managing the domain logic and coordinating between different managers.
+    (Provides all the functionalities of the current system).
+
+    Can be executed interactively to demonstrate the functionality of the domain logic, from a console or input file.
+
+    Main menu:
+    1. Parser options: Allows you to perform operations related to reading and writing data from and to external files.
+    2. Options on products: Allows you to manage products in the system, including their addition, deletion and modification.
+    3. Options on the shelves: Allows you to manage shelves, including their creation, modification and visualisation.
+    0. Exit: Exit the program.
+
+    Parser menu:
+    1. Read data from an external file: Allows you to read data from an external file.
+    2. Create a file with distribution: Allows you to create a file with the distribution of products on the shelves.
+    0. Exit: Return to the main menu.
+
+    Products menu:
+    1. Add product to the system: Add a new product to the catalog.
+    2. Remove product from the system: Remove an existing product from the catalog.
+    3. Reduce product quantity in the system: Reduce the quantity of a product in the system.
+    4. Increase product quantity in the system: Increase the quantity of a product in the system.
+    5. Add product to the list: Add a product to a list of products.
+    6. Remove product from the list: Remove a product from a list of products.
+    7. Show all products in the catalog: Display all the products in the catalog.
+    8. Create new list: Create a new list of products.
+    9. Delete a list: Delete an existing list of products.
+    10. Show information about all product lists: Show information about all the product lists.
+    11. Show information about a product list: Show information about a specific product list.
+    12. Show history of changes in product lists: Show the history of changes in the product lists.
+    13. Apply discount to the product list: Apply a discount to a list of products.
+    14. Modify similarities between products: Modify the similarities between products.
+    15. Show similarities: Show the similarities between products.
+    0. Exit: Return to the main menu.
+
+    Shelves menu:
+    1. Create a shelf: Create a new shelf.
+    2. Change the sorting algorithm of a shelf: Change the sorting algorithm of a shelf.
+    3. Show all shelves: Show all the shelves.
+    4. Show a shelf: Show a specific shelf.
+    5. Show shelf distribution: Show the distribution of products on a shelf.
+    6. Change the list associated with a shelf: Change the list of products associated with a shelf.
+    7. Create new shelf distribution: Create a new distribution for a shelf.
+    8. Modify distribution: Modify the distribution of a shelving unit.
+    0. Exit: Return to the main menu.
+
+DriverProductManager.java:
+
+    Main Menu:
+    1. Add a product to the catalog: Allows the user to add a new product to the catalog by specifying its name, category, price, and quantity.
+    2. Create a product list: Allows the user to create a new product list by specifying its name and category.
+    3. Add a product to a product list: Allows the user to add an existing product from the catalog to a specified product list.
+    4. Remove a product from a product list: Allows the user to remove a product from a specified product list.
+    5. Get a product list: Allows the user to retrieve and display the details of a specified product list.
+    6. Apply a discount to a product list: Allows the user to apply a discount percentage to all products in a specified product list.
+    7. Increase the quantity of a product: Allows the user to increase the quantity of a specified product in the catalog.
+    8. Decrease the quantity of a product: Allows the user to decrease the quantity of a specified product in the catalog.
+    9. Add a similarity between products: Allows the user to define a similarity value between two specified products.
+    10. Remove a similarity between products: Allows the user to remove an existing similarity between two specified products.
+    11. Show similarities between products: Displays all defined similarities between products in the catalog.
+    12. Show all products: Displays all products currently in the catalog.
+    13. Show all product lists: Displays all product lists currently in the system.
+    14. Show a specific product list: Displays the details of a specified product list.
+    15. Remove a product from the catalog: Allows the user to remove a specified product from the catalog.
+    16. Remove a product list: Allows the user to remove a specified product list from the system.
+    17. Apply a discount to a product: Allows the user to apply a discount percentage to a specified product in the catalog.
+    18. Show the modification log: Displays the log of all modifications made to products and product lists.
+    help. Show all available commands: Displays a list of all available commands and their descriptions.
+    exit. Exit the program: Exits the program.
+
+    Detailed Descriptions:
+
+    1. Add a product to the catalog:
+       - Prompts the user to enter the product name, category, price, and quantity.
+       - Adds the product to the catalog with the specified details.
+       - Displays a success message if the product is added successfully.
+
+    2. Create a product list:
+       - Prompts the user to enter the name and category of the new product list.
+       - Creates an empty product list with the specified details.
+       - Displays a success message if the product list is created successfully.
+
+    3. Add a product to a product list:
+       - Prompts the user to enter the name of the product list and the name of the product to add.
+       - Adds the specified product to the specified product list.
+       - Displays a success message if the product is added to the list successfully.
+
+    4. Remove a product from a product list:
+       - Prompts the user to enter the name of the product list and the name of the product to remove.
+       - Removes the specified product from the specified product list.
+       - Displays a success message if the product is removed from the list successfully.
+
+    5. Get a product list:
+       - Prompts the user to enter the name of the product list.
+       - Retrieves and displays the details of the specified product list.
+
+    6. Apply a discount to a product list:
+       - Prompts the user to enter the name of the product list and the discount percentage.
+       - Applies the specified discount to all products in the specified product list.
+       - Displays a success message if the discount is applied successfully.
+
+    7. Increase the quantity of a product:
+       - Prompts the user to enter the name of the product and the quantity to increase.
+       - Increases the quantity of the specified product in the catalog.
+       - Displays the remaining amount of the product after the increase.
+
+    8. Decrease the quantity of a product:
+       - Prompts the user to enter the name of the product and the quantity to decrease.
+       - Decreases the quantity of the specified product in the catalog.
+       - Displays the remaining amount of the product after the decrease.
+
+    9. Add a similarity between products:
+       - Prompts the user to enter the names of the two products and the similarity value.
+       - Defines a similarity between the specified products with the specified value.
+       - Displays a success message if the similarity is added successfully.
+
+    10. Remove a similarity between products:
+        - Prompts the user to enter the names of the two products.
+        - Removes the existing similarity between the specified products.
+        - Displays a success message if the similarity is removed successfully.
+
+    11. Show similarities between products:
+        - Displays all defined similarities between products in the catalog.
+
+    12. Show all products:
+        - Displays all products currently in the catalog.
+
+    13. Show all product lists:
+        - Displays all product lists currently in the system.
+
+    14. Show a specific product list:
+        - Prompts the user to enter the name of the product list.
+        - Displays the details of the specified product list.
+
+    15. Remove a product from the catalog:
+        - Prompts the user to enter the name of the product to remove.
+        - Removes the specified product from the catalog.
+        - Displays a success message if the product is removed successfully.
+
+    16. Remove a product list:
+        - Prompts the user to enter the name of the product list to remove.
+        - Removes the specified product list from the system.
+        - Displays a success message if the product list is removed successfully.
+
+    17. Apply a discount to a product:
+        - Prompts the user to enter the name of the product and the discount percentage.
+        - Applies the specified discount to the specified product in the catalog.
+        - Displays a success message if the discount is applied successfully.
+
+    18. Show the modification log:
+        - Displays the log of all modifications made to products and product lists.
+
+    help. Show all available commands:
+        - Displays a list of all available commands and their descriptions.
+
+    exit. Exit the program:
+        - Exits the program.
+
+
+domain.mf: Contains metadata about the domain classes.

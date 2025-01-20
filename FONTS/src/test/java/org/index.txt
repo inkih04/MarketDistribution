@@ -1,0 +1,98 @@
+.
+├── algorithms
+│   └── BruteForceAlgorithmTest.java
+│   └── SmartAlgorithmTest.java
+└── classes
+    ├── ProductListTest.java
+    └── ProductTest.java
+
+
+algorithms: Contains test classes for the algorithms package. Uses Mockito for mocking dependencies.
+
+        BruteForceAlgorithmTest.java: Test class for the BruteForceAlgorithm class.
+        SmartAlgorithmTest.java: Test class for the SmartAlgorithm class.
+
+classes: Contains test classes for the classes package. Uses JUnit for testing.
+
+        ProductListTest.java: Test class for the ProductList class.
+        ProductTest.java: Test class for the Product class.
+
+Methods ProductListTest.java:
+
+    - **setUpAll()**: This method is annotated with `@BeforeClass` and is executed once before all tests.
+                      It initializes the total start time and prints a message indicating the start of the `ProductListTest`.
+
+    - **setUp()**: This method is annotated with `@Before` and is executed before each test.
+                    It initializes a new `ProductList` and a `Product` object for testing. It also sets the `testPassed` flag to `true`.
+
+    - **tearDown()**: This method is annotated with `@After` and is executed after each test.
+                      It calculates the time taken for the test and prints the result along with the time taken.
+
+    - **tearDownAll()**: This method is annotated with `@AfterClass` and is executed once after all tests.
+                         It calculates the total time taken for all tests and prints the result.
+
+    - **generateRandomProducts(int count)**: This private method generates an array of random `Product` objects for testing purposes.
+                                             It takes the number of products to generate as a parameter.
+
+    - **testAddProduct()**: This test method verifies that a product can be added to the `ProductList` and that the product is
+                            present in the list after addition.
+
+    - **testAddMultipleProducts()**: This test method verifies that multiple products can be added to the `ProductList` and that
+                                     each product is present in the list after addition.
+
+    - **testAddProductWithDifferentCategory()**: This test method verifies that a product with a different category can be added to the
+                                                 `ProductList` and that the product is present in the list after addition.
+
+    - **testRemoveProduct()**: This test method verifies that a product can be removed from the `ProductList` and that the product is no longer present in the list after removal.
+
+    - **testRemoveNonExistentProduct()**: This test method verifies that attempting to remove a non-existent product from the `ProductList` returns `false`.
+
+    - **testRemoveMultipleProducts()**: This test method verifies that multiple products can be removed from the `ProductList` and that each product is no longer present in the list after removal.
+
+    - **testApplyDiscount()**: This test method verifies that a discount can be applied to a product in the `ProductList` and that the product's price is correctly updated.
+
+    - **testApplyDiscountToMultipleProducts()**: This test method verifies that a discount can be applied to multiple products in the `ProductList` and that each product's price is correctly updated.
+
+    - **testToString()**: This test method verifies the `toString()` method of the `ProductList` class. It checks that the string representation of the `ProductList` matches the expected output.
+
+Methods ProductTest.java:
+
+    - **testGetName(): This test method verifies that the getName() method of the Product class returns the correct name.
+
+    - **testGetCategory(): This test method verifies that the getCategory() method of the Product class returns the correct category.
+
+    - **testSetCategory(): This test method verifies that the setCategory() method of the Product class correctly sets the category.
+
+    - **testSetNullCategory(): This test method verifies that the setCategory() method throws an IllegalArgumentException when a null category is set.
+
+    - **testSetEmptyCategory(): This test method verifies that the setCategory() method throws an IllegalArgumentException when an empty category is set.
+
+    - **testGetPrice(): This test method verifies that the getPrice() method of the Product class returns the correct price.
+
+    - **testSetPrice(): This test method verifies that the setPrice() method of the Product class correctly sets the price.
+
+    - **testSetNegativePrice(): This test method verifies that the setPrice() method throws an IllegalArgumentException when a negative price is set.
+
+    - **testGetAmount(): This test method verifies that the getAmount() method of the Product class returns the correct amount.
+
+    - **testSetAmount(): This test method verifies that the setAmount() method of the Product class correctly sets the amount.
+
+    - **testSetNegativeAmount(): This test method verifies that the setAmount() method throws an IllegalArgumentException when a negative amount is set.
+
+    - **testApplyDiscount(): This test method verifies that the applyDiscount() method of the Product class correctly applies a discount to the product's price.
+
+    - **testApplyInvalidDiscount(): This test method verifies that the applyDiscount() method throws an IllegalArgumentException when an invalid discount is applied.
+
+    - **testApplyOriginalPrice(): This test method verifies that the applyOriginalPrice() method of the Product class correctly resets the product's price to its original value.
+
+    - **testUpdateAmount(): This test method verifies that the updateAmount() method of the Product class correctly updates the product's amount.
+
+    - **testUpdateInvalidAmount(): This test method verifies that the updateAmount() method throws a ProductException when an invalid amount is set.
+
+    - **testToString(): This test method verifies the toString() method of the Product class.
+                        It checks that the string representation of the Product matches the expected output.
+
+Logging
+
+The class uses a `Logger` to log information, warnings, and errors during the execution of the tests.
+Each test method logs the start of the test, any exceptions that occur, and the result of the test.
