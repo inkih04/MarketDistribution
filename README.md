@@ -40,13 +40,18 @@ Programming project, Group 23, subgroup 2 <br>Teacher: Sergio Álvarez Napagao (
 
 ## APP Menu
 
+<br>
 <div align="center" style="margin-bottom: 40px;">
   <img src="https://github.com/inkih04/SuperMarketDistribution/blob/main/pictures/optionsMenu.png" alt="Options Menu">
 </div>
 
+<br>
+
 <div align="center" style="margin-bottom: 40px;">
   <img src="https://github.com/inkih04/SuperMarketDistribution/blob/main/pictures/distributions.png" alt="Distributions">
 </div>
+
+<br>
 
 <div align="center" style="margin-bottom: 40px;">
   <img src="https://github.com/inkih04/SuperMarketDistribution/blob/main/pictures/Product%20Catalog_001.png" alt="Menu Image">
