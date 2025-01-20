@@ -1,0 +1,12 @@
+# ProductName,Category,Price,OriginalPrice,Amount
+kiwi,fruta,2.5,2.5,10
+Taronja,fruta,1.2,1.2,12
+Platàn,fruita,0.8,0.8,20
+
+# Product1,Product2,SimilarityScore
+kiwi,Taronja,0.7
+kiwi,Platàn,0.1
+Taronja,kiwi,0.7
+Taronja,Platàn,0.5
+Platàn,kiwi,0.1
+Platàn,Taronja,0.5
