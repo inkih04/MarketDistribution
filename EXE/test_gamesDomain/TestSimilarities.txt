@@ -1,0 +1,11 @@
+# Añadir productos al catálogo
+ADD_PRODUCT_TO_CATALOG Milk Categoria1 2.5 50
+ADD_PRODUCT_TO_CATALOG Bread Categoria2 1.0 100
+ADD_PRODUCT_TO_CATALOG Eggs Categoria1 3.0 20
+
+# Añadir y eliminar similitudes entre productos
+CHANGE_SIMILARITIES Milk Bread 0.8
+CHANGE_SIMILARITIES Milk Eggs 0.5
+SHOW_SIMILARITIES
+REMOVE_SIMILARITY Milk Bread
+SHOW_SIMILARITIES

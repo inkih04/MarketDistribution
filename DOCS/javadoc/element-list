@@ -1,0 +1,11 @@
+org.domain.algorithms
+org.domain.classes
+org.domain.controllers
+org.domain.exceptions
+org.domain.types
+org.drivers
+org.persistence.controllers
+org.presentation.controllers
+org.presentation.drivers
+org.presentation.utils
+org.presentation.views

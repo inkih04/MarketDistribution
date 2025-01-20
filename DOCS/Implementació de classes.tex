@@ -1,0 +1,75 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+\usepackage{longtable}
+\usepackage{array}
+
+\setlength{\tabcolsep}{4pt} % Reduce the space between columns
+
+\begin{document}
+
+\section*{Classes Implementades per cada Membre}
+
+\subsection*{Capa de Domini}
+
+\begin{longtable}{|>{\raggedright\arraybackslash}p{3cm}|>{\raggedright\arraybackslash}p{12cm}|}
+\hline
+\textbf{Membre} & \textbf{Classes Implementades} \\
+\hline
+Max Estrade & AbstractAlgorithm, BruteForceAlgorithm, BruteForceAlgorithmTest, HillClimbingAlgorithm, HillClimbingAlgorithmTest, Distribution \\
+\hline
+Víctor Díez & InputManager, ControllerDomain, DriverControllerDomain, Shelf \\
+\hline
+Víctor Llorens & Similarity, SimilarityManager, BruteForceAlgorithmTest, HillClimbingAlgorithmTest, ShelfManager, Shelf, Pair \\
+\hline
+Sergio Shmyhelskyy & Product, ProductList, ProductManager, DistributionManager, ProductTest, ProductListTest, DriverProductManager, UserManager, UserSet, User, CurrentUser, AdminUser \\
+\hline
+\end{longtable}
+
+\subsection*{Capa de Persistència}
+
+\begin{longtable}{|>{\raggedright\arraybackslash}p{3cm}|>{\raggedright\arraybackslash}p{12cm}|}
+\hline
+\textbf{Membre} & \textbf{Classes Implementades} \\
+\hline
+Max Estrade & - \\
+\hline
+Víctor Díez & - \\
+\hline
+Víctor Llorens & UserManagerData, ControllerPersistence \\
+\hline
+Sergio Shmyhelskyy & ProductManagerData, UserManagerData, PersistenceController \\
+\hline
+\end{longtable}
+
+\subsection*{Capa de Presentació}
+
+\begin{longtable}{|>{\raggedright\arraybackslash}p{3cm}|>{\raggedright\arraybackslash}p{12cm}|}
+\hline
+\textbf{Membre} & \textbf{Classes Implementades} \\
+\hline
+Max Estrade & - \\
+\hline
+Víctor Díez & PresentationController, LoginView, ShelfView, MenuView, ProductCatalogView \\
+\hline
+Víctor Llorens & CreateShelfView, GenerateDistributionView, ManageDistributionsView, ShelfView, ShowDistributionView \\
+\hline
+Sergio Shmyhelskyy & PresentationController, BasicView, AddProductView, ProductCatalogView, ProductListMenuView, ProductListView, SimilaritiesDialog, OperationLogView \\
+\hline
+\end{longtable}
+
+\section{Canvis realitzats respecte el disseny general inicial}
+
+\begin{itemize}
+    \item S'ha deixat d'usar \texttt{SimilarityManager}, s'ha passat a usar una matriu de similituds \texttt{Map<String, Map<String, Double>>} en \texttt{ProductManager}.
+    \item Cada producte a deixat de tenir una llista de similituds, i ara es guarda una matriu de similituds en \texttt{ProductManager}.
+    \item En consequència a l'anterior, ara els algoritmes de generació de distribucions reben la matriu de similituds general juntament amb la llista de productes.
+    \item S'ha aplicat un nou controlador \texttt{ShelfManager}, que s'encarrega de gestionar els algoritmes de generació de distribucions per a les prestatgeries.7
+    \item Pels algoritmes s'ha afegit l'opció de limitar les iteracions màximes.
+    \item S'ha afegit la possibilitat de manipular les mides de les prestatgeries (ampla i alçada).
+    \item S'ha afegir la gestió d'usuaris per que puguin fer login i logout, i per cada usuari pugui veure els productes del catàleg, llistes de productes i historial de distribucions.
+    \item S'ha mogut l'historial de logs de gestió de productes al controlador de domini, per mantenir una historia global de totes les operacions per cada usuari.
+\end{itemize}
+
+\end{document}

@@ -1,0 +1,65 @@
+# Crear listas de productos
+CREATE_LIST list1 Categoria1
+
+# Añadir productos al catálogo con similitudes variadas
+ADD_PRODUCT_TO_CATALOG Product1 Categoria1 10.0 50
+ADD_PRODUCT_TO_CATALOG Product2 Categoria1 20.0 30 | {Product1, 0.8}
+ADD_PRODUCT_TO_CATALOG Product3 Categoria1 15.0 40 | {Product1, 0.5} {Product2, 0.6}
+ADD_PRODUCT_TO_CATALOG Product4 Categoria1 25.0 20 | {Product1, 0.4} {Product2, 0.6} {Product3, 0.7}
+ADD_PRODUCT_TO_CATALOG Product5 Categoria1 30.0 10 | {Product1, 0.3} {Product2, 0.5} {Product3, 0.7} {Product4, 0.8}
+ADD_PRODUCT_TO_CATALOG Product6 Categoria1 35.0 15 | {Product1, 0.2} {Product2, 0.4} {Product3, 0.6} {Product4, 0.7} {Product5, 0.9}
+ADD_PRODUCT_TO_CATALOG Product7 Categoria1 40.0 25 | {Product1, 0.1} {Product2, 0.3} {Product3, 0.5} {Product4, 0.6} {Product5, 0.8} {Product6, 0.9}
+ADD_PRODUCT_TO_CATALOG Product8 Categoria1 45.0 35 | {Product1, 0.2} {Product2, 0.4} {Product3, 0.6} {Product4, 0.7} {Product5, 0.9} {Product6, 0.8} {Product7, 0.7}
+ADD_PRODUCT_TO_CATALOG Product9 Categoria1 50.0 45 | {Product1, 0.3} {Product2, 0.5} {Product3, 0.7} {Product4, 0.8} {Product5, 0.9} {Product6, 0.8} {Product7, 0.7} {Product8, 0.6}
+ADD_PRODUCT_TO_CATALOG Product10 Categoria1 55.0 55 | {Product1, 0.4} {Product2, 0.6} {Product3, 0.8} {Product4, 0.9} {Product5, 0.8} {Product6, 0.7} {Product7, 0.6} {Product8, 0.5} {Product9, 0.4}
+ADD_PRODUCT_TO_CATALOG Product11 Categoria1 60.0 65 | {Product1, 0.5} {Product2, 0.7} {Product3, 0.9} {Product4, 0.8} {Product5, 0.7} {Product6, 0.6} {Product7, 0.5} {Product8, 0.4} {Product9, 0.3} {Product10, 0.2}
+ADD_PRODUCT_TO_CATALOG Product12 Categoria1 65.0 75 | {Product1, 0.6} {Product2, 0.8} {Product3, 0.9} {Product4, 0.7} {Product5, 0.6} {Product6, 0.5} {Product7, 0.4} {Product8, 0.3} {Product9, 0.2} {Product10, 0.1} {Product11, 0.9}
+ADD_PRODUCT_TO_CATALOG Product13 Categoria1 70.0 85 | {Product1, 0.7} {Product2, 0.9} {Product3, 0.8} {Product4, 0.6} {Product5, 0.5} {Product6, 0.4} {Product7, 0.3} {Product8, 0.2} {Product9, 0.1} {Product10, 0.9} {Product11, 0.8} {Product12, 0.7}
+ADD_PRODUCT_TO_CATALOG Product14 Categoria1 75.0 95 | {Product1, 0.8} {Product2, 0.7} {Product3, 0.6} {Product4, 0.5} {Product5, 0.4} {Product6, 0.3} {Product7, 0.2} {Product8, 0.1} {Product9, 0.9} {Product10, 0.8} {Product11, 0.7} {Product12, 0.6} {Product13, 0.5}
+ADD_PRODUCT_TO_CATALOG Product15 Categoria1 80.0 105 | {Product1, 0.9} {Product2, 0.8} {Product3, 0.7} {Product4, 0.6} {Product5, 0.5} {Product6, 0.4} {Product7, 0.3} {Product8, 0.2} {Product9, 0.1} {Product10, 0.9} {Product11, 0.8} {Product12, 0.7} {Product13, 0.6} {Product14, 0.5}
+ADD_PRODUCT_TO_CATALOG Product16 Categoria1 85.0 115 | {Product1, 0.8} {Product2, 0.7} {Product3, 0.6} {Product4, 0.5} {Product5, 0.4} {Product6, 0.3} {Product7, 0.2} {Product8, 0.1} {Product9, 0.9} {Product10, 0.8} {Product11, 0.7} {Product12, 0.6} {Product13, 0.5} {Product14, 0.4} {Product15, 0.3}
+ADD_PRODUCT_TO_CATALOG Product17 Categoria1 90.0 125 | {Product1, 0.7} {Product2, 0.6} {Product3, 0.5} {Product4, 0.4} {Product5, 0.3} {Product6, 0.2} {Product7, 0.1} {Product8, 0.9} {Product9, 0.8} {Product10, 0.7} {Product11, 0.6} {Product12, 0.5} {Product13, 0.4} {Product14, 0.3} {Product15, 0.2} {Product16, 0.1}
+ADD_PRODUCT_TO_CATALOG Product18 Categoria1 95.0 135 | {Product1, 0.6} {Product2, 0.5} {Product3, 0.4} {Product4, 0.3} {Product5, 0.2} {Product6, 0.1} {Product7, 0.9} {Product8, 0.8} {Product9, 0.7} {Product10, 0.6} {Product11, 0.5} {Product12, 0.4} {Product13, 0.3} {Product14, 0.2} {Product15, 0.1} {Product16, 0.9} {Product17, 0.8}
+ADD_PRODUCT_TO_CATALOG Product19 Categoria1 100.0 145 | {Product1, 0.5} {Product2, 0.4} {Product3, 0.3} {Product4, 0.2} {Product5, 0.1} {Product6, 0.9} {Product7, 0.8} {Product8, 0.7} {Product9, 0.6} {Product10, 0.5} {Product11, 0.4} {Product12, 0.3} {Product13, 0.2} {Product14, 0.1} {Product15, 0.9} {Product16, 0.8} {Product17, 0.7} {Product18, 0.6}
+ADD_PRODUCT_TO_CATALOG Product20 Categoria1 105.0 155 | {Product1, 0.4} {Product2, 0.3} {Product3, 0.2} {Product4, 0.1} {Product5, 0.9} {Product6, 0.8} {Product7, 0.7} {Product8, 0.6} {Product9, 0.5} {Product10, 0.4} {Product11, 0.3} {Product12, 0.2} {Product13, 0.1} {Product14, 0.9} {Product15, 0.8} {Product16, 0.7} {Product17, 0.6} {Product18, 0.5} {Product19, 0.4}
+
+# Mostrar todos los productos
+SHOW_PRODUCTS
+
+# Añadir productos a la lista
+ADD_PRODUCT Product1 list1
+ADD_PRODUCT Product2 list1
+ADD_PRODUCT Product3 list1
+ADD_PRODUCT Product4 list1
+ADD_PRODUCT Product5 list1
+ADD_PRODUCT Product6 list1
+ADD_PRODUCT Product7 list1
+ADD_PRODUCT Product8 list1
+ADD_PRODUCT Product9 list1
+ADD_PRODUCT Product10 list1
+ADD_PRODUCT Product11 list1
+ADD_PRODUCT Product12 list1
+ADD_PRODUCT Product13 list1
+ADD_PRODUCT Product14 list1
+ADD_PRODUCT Product15 list1
+ADD_PRODUCT Product16 list1
+ADD_PRODUCT Product17 list1
+ADD_PRODUCT Product18 list1
+ADD_PRODUCT Product19 list1
+ADD_PRODUCT Product20 list1
+
+# Crear estanterías con diferentes listas
+CREATE_SHELF 1 100 1 list1
+CREATE_SHELF 2 200 1 list1
+
+# Crear y mostrar distribuciones de estanterías
+CREATE_DISTRIBUTION 1 Distribucion1
+CREATE_DISTRIBUTION 2 Distribucion2
+SHOW_DISTRIBUTION 1
+SHOW_DISTRIBUTION 2
+
+# Mostrar similaridades
+SHOW_SIMILARITIES
+
+# Mostrar el log de modificaciones
+SHOW_MODIFICATION_LOG

@@ -1,0 +1,20 @@
+# Crear listas de productos
+CREATE_LIST list1 Categoria1
+CREATE_LIST list2 Categoria2
+
+# Añadir productos al catálogo
+ADD_PRODUCT_TO_CATALOG Milk Categoria1 2.5 50
+ADD_PRODUCT_TO_CATALOG Bread Categoria2 1.0 100
+ADD_PRODUCT_TO_CATALOG Eggs Categoria1 3.0 20
+
+# Añadir productos a listas
+ADD_PRODUCT Milk list1
+ADD_PRODUCT Bread list1
+ADD_PRODUCT Eggs list2
+
+# Aplicar descuentos a listas
+APPLY_DISCOUNT_TO_LIST list1 10.0
+APPLY_DISCOUNT_TO_LIST list2 20.0
+
+# Mostrar todas las listas después de aplicar descuentos
+SHOW_ALL_LISTS

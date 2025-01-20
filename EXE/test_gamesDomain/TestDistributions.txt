@@ -1,0 +1,23 @@
+# Crear listas de productos
+CREATE_LIST list1 Categoria1
+CREATE_LIST list2 Categoria2
+
+# Añadir productos al catálogo
+ADD_PRODUCT_TO_CATALOG Product1 Categoria1 10.0 50
+ADD_PRODUCT_TO_CATALOG Product2 Categoria1 20.0 30 | {Product1, 0.8}
+ADD_PRODUCT_TO_CATALOG Product3 Categoria1 15.0 40 | {Product1, 0.5} {Product2, 0.6}
+ADD_PRODUCT_TO_CATALOG Product4 Categoria1 25.0 20 | {Product1, 0.4} {Product2, 0.6} {Product3, 0.7}
+
+ADD_PRODUCT Product1 list1
+ADD_PRODUCT Product2 list1
+
+# Crear estanterías
+CREATE_SHELF 1 100 1 list1
+CREATE_SHELF 2 200 1 list1
+
+# Crear y mostrar distribuciones de estanterías
+
+CREATE_DISTRIBUTION 1 Distribucion1
+CREATE_DISTRIBUTION 2 Distribucion2
+SHOW_DISTRIBUTION 1
+SHOW_DISTRIBUTION 2

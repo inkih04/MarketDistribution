@@ -1,0 +1,149 @@
+.
+├── index.txt
+├── jars
+│    └── DriverControllerDomain.jar
+├── org
+│    ├── domain
+│    │   ├── algorithms
+│    │   │   ├── AbstractAlgorithm.class
+│    │   │   ├── BruteForceAlgorithm.class
+│    │   │   └── SmartAlgorithm.class
+│    │   ├── app
+│    │   │   └── Application.class
+│    │   ├── classes
+│    │   │   ├── Distribution.class
+│    │   │   ├── Product.class
+│    │   │   ├── ProductList.class
+│    │   │   ├── Shelf.class
+│    │   │   └── Similarity.class
+│    │   ├── controllers
+│    │   │   ├── ControllerDomain$SingletonHelper.class
+│    │   │   ├── ControllerDomain.class
+│    │   │   ├── DistributionManager$DistributionManagerHolder.class
+│    │   │   ├── DistributionManager.class
+│    │   │   ├── InputManager$InputManagerHolder.class
+│    │   │   ├── InputManager.class
+│    │   │   ├── ProductManager$ProductManagerHolder.class
+│    │   │   ├── ProductManager.class
+│    │   │   ├── SimilarityManager$SimilarityManagerHolder.class
+│    │   │   └── SimilarityManager.class
+│    │   ├── exceptions
+│    │   │   ├── DistributionException.class
+│    │   │   ├── InputManagerException.class
+│    │   │   ├── ParserException.class
+│    │   │   ├── ProductException.class
+│    │   │   ├── ProductListException.class
+│    │   │   └── ShelfException.class
+│    │   └── types
+│    │       └── Pair.class
+│    └── drivers
+│        ├── DriverControllerDomain.class
+│        └── DriverProductManager.class
+└── test_games
+    ├── TestComplete.txt
+    ├── TestDiscounts.txt
+    ├── TestDistributions.txt
+    ├── TestHard.txt
+    ├── TestProductLists.txt
+    ├── TestProductManagement.txt
+    └── TestSimilarities.txt
+
+Absolute path: /EXE
+
+jars: Here you can find the .jar files of the drivers once compiled and packaged.
+org: There is the executable of all the classes of the model (exceptions, functions and types) and the tests in .class format.
+     It follows the structure of the packages.
+test_games: Here you can find the tests for DriverControllerDomain in .txt format.
+
+Description of the tests:
+
+TestComplete.txt
+    This test script is designed to cover a comprehensive set of functionalities within the application. It includes the following steps:
+
+        Creating Product Lists: Initializes a product list named list1 under the category Categoria1.
+        Adding Products to Catalog: Adds multiple products to the catalog with varying similarities to other products.
+        Displaying Products: Shows all products in the catalog.
+        Adding Products to List: Adds the products to the previously created list list1.
+        Creating Shelves: Creates two shelves with different algorithms and capacities.
+        Changing Shelf Algorithm: Changes the sorting algorithm of one of the shelves.
+        Creating and Displaying Distributions: Creates and displays distributions for the shelves.
+        Showing Similarities: Displays the similarities between products.
+        Displaying Modification Log: Shows the log of modifications made during the test.
+
+    Expected Result: The test should successfully create lists, add products with similarities, display products, manage shelves and distributions,
+    and show similarities and modification logs without errors.
+
+TestDiscounts.txt
+    This test script focuses on applying discounts to product lists. It includes the following steps:
+
+        Creating Product Lists: Initializes two product lists named list1 and list2 under different categories.
+        Adding Products to Catalog: Adds products to the catalog.
+        Adding Products to Lists: Adds the products to the respective lists.
+        Applying Discounts: Applies discounts to the product lists.
+        Displaying Lists: Shows all lists after applying discounts.
+
+        Expected Result: The test should successfully apply discounts to the lists and display the updated lists with discounted prices.
+
+TestDistributions.txt
+    This test script is designed to test the creation and display of shelf distributions. It includes the following steps:
+
+        Creating Product Lists: Initializes two product lists named list1 and list2 under different categories.
+        Adding Products to Catalog: Adds products to the catalog.
+        Creating Shelves: Creates two shelves with different capacities and algorithms.
+        Creating and Displaying Distributions: Creates and displays distributions for the shelves.
+
+    Expected Result: The test should successfully create shelves and their distributions, and display the distributions without errors.
+
+TestHard.txt
+    This test script is similar to TestComplete.txt but with a larger number of products and more complex similarities. It includes the following steps:
+
+        Creating Product Lists: Initializes a product list named list1 under the category Categoria1.
+        Adding Products to Catalog: Adds multiple products to the catalog with varying similarities to other products.
+        Displaying Products: Shows all products in the catalog.
+        Adding Products to List: Adds the products to the previously created list list1.
+        Creating Shelves: Creates two shelves with different algorithms and capacities.
+        Changing Shelf Algorithm: Changes the sorting algorithm of one of the shelves.
+        Creating and Displaying Distributions: Creates and displays distributions for the shelves.
+        Showing Similarities: Displays the similarities between products.
+        Displaying Modification Log: Shows the log of modifications made during the test.
+
+    Expected Result: The test should handle a larger dataset and more complex similarities, successfully performing all operations without errors.
+
+
+TestProductLists.txt
+    This test script focuses on managing product lists. It includes the following steps:
+
+        Creating Product Lists: Initializes two product lists named list1 and list2 under different categories.
+        Adding Products to Catalog: Adds products to the catalog.
+        Adding Products to Lists: Adds the products to the respective lists.
+        Displaying Lists: Shows all lists.
+        Removing Products from Lists: Removes products from the lists.
+        Displaying Lists After Removal: Shows all lists after removing products.
+        Deleting Lists: Deletes the product lists.
+        Displaying Lists After Deletion: Shows all lists after deletion.
+
+    Expected Result: The test should successfully manage the creation, modification, and deletion of product lists, displaying the correct state at each step.
+
+TestProductManagement.txt
+    This test script focuses on managing products within the catalog. It includes the following steps:
+
+        Creating Product Lists: Initializes two product lists named list1 and list2 under different categories.
+        Adding Products to Catalog: Adds products to the catalog.
+        Displaying Products: Shows all products in the catalog.
+        Increasing and Decreasing Product Quantities: Adjusts the quantities of products in the catalog.
+        Displaying Products After Quantity Changes: Shows all products after quantity adjustments.
+        Removing Products from Catalog: Removes products from the catalog.
+        Displaying Products After Removal: Shows all products after removal.
+
+    Expected Result: The test should successfully manage product quantities and removal, displaying the correct state of the catalog at each step.
+
+TestSimilarities.txt
+    This test script focuses on managing similarities between products. It includes the following steps:
+
+        Adding Products to Catalog: Adds products to the catalog.
+        Changing and Removing Similarities: Adjusts and removes similarities between products.
+        Displaying Similarities: Shows the similarities between products.
+        Expected Result: The test should successfully manage the similarities between products, displaying the correct state of similarities at each step.
+
+
+

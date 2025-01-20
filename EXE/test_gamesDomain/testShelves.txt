@@ -1,0 +1,25 @@
+# Crear listas de productos
+CREATE_LIST list1 Categoria1
+
+# Añadir productos al catálogo con similitudes variadas
+ADD_PRODUCT_TO_CATALOG Product1 Categoria1 10.0 50
+ADD_PRODUCT_TO_CATALOG Product2 Categoria1 20.0 30 | {Product1, 0.8}
+ADD_PRODUCT_TO_CATALOG Product3 Categoria1 15.0 40 | {Product1, 0.5} {Product2, 0.6}
+ADD_PRODUCT_TO_CATALOG Product4 Categoria1 25.0 20 | {Product1, 0.4} {Product2, 0.6} {Product3, 0.7}
+ADD_PRODUCT_TO_CATALOG Product5 Categoria1 30.0 10 | {Product1, 0.3} {Product2, 0.5} {Product3, 0.7} {Product4, 0.8}
+ADD_PRODUCT_TO_CATALOG Product6 Categoria1 35.0 15 | {Product1, 0.2} {Product2, 0.4} {Product3, 0.6} {Product4, 0.8} {Product5, 0.9}
+ADD_PRODUCT_TO_CATALOG Product7 Categoria1 40.0 25 | {Product1, 0.1} {Product2, 0.3} {Product3, 0.5} {Product4, 0.7} {Product5, 0.8} {Product6, 0.9}
+ADD_PRODUCT_TO_CATALOG Product8 Categoria1 45.0 35 | {Product1, 0.9} {Product2, 0.8} {Product3, 0.7} {Product4, 0.6} {Product5, 0.5} {Product6, 0.4} {Product7, 0.3}
+ADD_PRODUCT_TO_CATALOG Product9 Categoria1 50.0 45 | {Product1, 0.8} {Product2, 0.7} {Product3, 0.6} {Product4, 0.5} {Product5, 0.4} {Product6, 0.3} {Product7, 0.2} {Product8, 0.1}
+ADD_PRODUCT_TO_CATALOG Product10 Categoria1 55.0 55 | {Product1, 0.7} {Product2, 0.6} {Product3, 0.5} {Product4, 0.4} {Product5, 0.3} {Product6, 0.2} {Product7, 0.1} {Product8, 0.8} {Product9, 0.9}
+
+ADD_PRODUCT Product1 list1
+ADD_PRODUCT Product2 list1
+ADD_PRODUCT Product3 list1
+ADD_PRODUCT Product4 list1
+ADD_PRODUCT Product5 list1
+ADD_PRODUCT Product6 list1
+ADD_PRODUCT Product7 list1
+ADD_PRODUCT Product8 list1
+ADD_PRODUCT Product9 list1
+ADD_PRODUCT Product10 list1
