@@ -40,12 +40,15 @@ Programming project, Group 23, subgroup 2 <br>Teacher: Sergio Álvarez Napagao (
 
 ##APP Menu
 
-![](https://github.com/inkih04/SuperMarketDistribution/blob/main/pictures/optionsMenu.png)
+<div align="center">
+  <img src="https://github.com/inkih04/SuperMarketDistribution/blob/main/pictures/optionsMenu.png" alt="Options Menu">
+</div>
 
-![](https://github.com/inkih04/SuperMarketDistribution/blob/main/pictures/distributions.png)
+<div align="center">
+  <img src="https://github.com/inkih04/SuperMarketDistribution/blob/main/pictures/distributions.png" alt="Distributions">
+</div>
 
 ![](https://github.com/inkih04/LinguaQuest/blob/main/imagesREADME/fotoMenu.png)
-
 
 ## Directory elements
 
