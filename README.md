@@ -8,7 +8,7 @@ Programming project, Group 23, subgroup 2 <br>Teacher: Sergio Álvarez Napagao (
 - Max Estrade Pey  ([max.estrade@estudiantat.upc.edu]())
 - Víctor Llorens Ramos([victor.llorens@estudiantat.upc.edu]())
 - Sergio  Shmyhelskyy Yaskevych ([sergio.shmyhelskyy@estudiantat.upc.edu]()).
-- 
+ 
 ## Classes Implemented by Each Member
 
 ### Domain Layer
